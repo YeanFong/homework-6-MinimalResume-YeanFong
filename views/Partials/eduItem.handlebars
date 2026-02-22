@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="row-left">
+    <div class="row-topline">
+      <span class="row-bold">{{leftTitle}}</span>
+      <span class="row-sep">|</span>
+      <span class="row-bold">{{leftMeta}}</span>
+    </div>
+
+    {{#if subLine}}
+      <div class="row-sub">{{subLine}}</div>
+    {{/if}}
+
+    {{#if bullets.length}}
+      <ul class="bullets">
+        {{#each bullets}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+
+  <div class="row-right">
+    <div class="row-date">{{rightDate}}</div>
+  </div>
+</div>
